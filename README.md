@@ -23,7 +23,7 @@
 ## 🚀 결과물 미리보기
 실제 구현된 자기소개 페이지는 아래 링크를 통해 확인할 수 있습니다.
 
-- **[자기소개 페이지 바로가기](https://dbvltngkr123-dev.github.io/introduce-myself/)** 
+- **[자기소개 페이지 바로가기](https://index.html)** 
   *(참고: 위 링크는 GitHub Pages로 배포된 주소입니다.)*
 
 ---
