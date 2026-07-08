@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조국현 포트폴리오 | 슬라이드 소개</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">KUKHYUN.DEV</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="intro.html" class="active">Slide Intro</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- 슬라이더 컨테이너 -->
+        <div class="slider-wrapper">
+            <div class="slides">
+                <!-- 슬라이드 1: 키워드 -->
+                <div class="slide active">
+                    <h2>01. Keyword</h2>
+                    <p class="slide-title">" 메모하고 기록하는 개발자 "</p>
+                    <p>선배님들의 피드백과 새로 배우는 기술 스택을 철저히 기록하여 온보딩 기간을 최소화하겠습니다. 모르는 것은 명확히 질문하고 투명하게 소통하는 개발자가 되겠습니다.</p>
+                </div>
+
+                <!-- 슬라이드 2: 기술 스택 -->
+                <div class="slide">
+                    <h2>02. Tech Stack</h2>
+                    <p class="slide-title">관심 기술 및 역량</p>
+                    <div class="tag-container" style="justify-content: center; margin-top: 20px;">
+                        <span class="tag">HTML5 / CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">Spring</span>
+                        <span class="tag">Git / GitHub</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                    <p style="margin-top: 20px; font-size: 0.95rem; color: #666;">기본기를 탄탄히 다지는 것이 중요하다 생각합니다.</p>
+                </div>
+
+                <!-- 슬라이드 3: 목표 -->
+                <div class="slide">
+                    <h2>03. Vision & Goal</h2>
+                    <p class="slide-title">회사에서의 목표</p>
+                    <ul style="text-align: left; max-width: 400px; margin: 20px auto;">
+                        <li>단기: 회사 서비스 코드 구조 파악</li>
+                        <li>중기: 1인분을 해내는 독립적인 개발자로 성장</li>
+                        <li>장기: 동료들이 신뢰하고 협업하고 싶은 개발자</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 컨트롤 버튼 -->
+            <button class="slide-btn prev-btn">❮</button>
+            <button class="slide-btn next-btn">❯</button>
+
+            <!-- 인디케이터 도트 -->
+            <div class="dots-container">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
