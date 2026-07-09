@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>조국현 포트폴리오 | 슬라이드 소개</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* 슬라이드 4 내부의 가독성을 위한 추가 스타일 (style.css에 넣거나 여기에 두세요) */
+        .concept-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            text-align: left;
+            margin-top: 20px;
+            font-size: 0.85rem;
+        }
+        .concept-item {
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+        .concept-item strong {
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+        .code-snippet {
+            background: #222;
+            color: #adff2f;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.8rem;
+        }
+    </style>
 </head>
 <body>
 
@@ -17,17 +48,14 @@
     </nav>
 
     <div class="container">
-        <!-- 슬라이더 컨테이너 -->
         <div class="slider-wrapper">
             <div class="slides">
-                <!-- 슬라이드 1: 키워드 -->
                 <div class="slide active">
                     <h2>01. Keyword</h2>
                     <p class="slide-title">" 메모하고 기록하는 개발자 "</p>
                     <p>선배님들의 피드백과 새로 배우는 기술 스택을 철저히 기록하여 온보딩 기간을 최소화하겠습니다. 모르는 것은 명확히 질문하고 투명하게 소통하는 개발자가 되겠습니다.</p>
                 </div>
 
-                <!-- 슬라이드 2: 기술 스택 -->
                 <div class="slide">
                     <h2>02. Tech Stack</h2>
                     <p class="slide-title">관심 기술 및 역량</p>
@@ -42,7 +70,6 @@
                     <p style="margin-top: 20px; font-size: 0.95rem; color: #666;">기본기를 탄탄히 다지는 것이 중요하다 생각합니다.</p>
                 </div>
 
-                <!-- 슬라이드 3: 목표 -->
                 <div class="slide">
                     <h2>03. Vision & Goal</h2>
                     <p class="slide-title">회사에서의 목표</p>
@@ -52,17 +79,46 @@
                         <li>장기: 동료들이 신뢰하고 협업하고 싶은 개발자</li>
                     </ul>
                 </div>
+
+                <div class="slide">
+                    <h2>04. Frontend Basics</h2>
+                    <p class="slide-title">1주 차 과제: 프론트 기본 개념 정리</p>
+                    
+                    <div class="concept-grid">
+                        <div class="concept-item">
+                            <strong>1. display 속성</strong>
+                            - Block: 한 줄 차지 (<span class="code-snippet">div</span>)<br>
+                            - Inline: 컨텐츠만큼 차지 (<span class="code-snippet">span</span>)
+                        </div>
+                        <div class="concept-item">
+                            <strong>2. HTML Layout</strong>
+                            - Flex: 1차원 정렬<br>
+                            - Grid: 2차원 정렬<br>
+                            - Float: 요소 부유 설정
+                        </div>
+                        <div class="concept-item">
+                            <strong>3. 박스 모델</strong>
+                            - Content: 실제 내용 영역<br>
+                            - Padding/Border/Margin: 안팎 여백
+                        </div>
+                        <div class="concept-item">
+                            <strong>4. id & class</strong>
+                            - id: 고유한 식별자 (#)<br>
+                            - class: 중복 가능한 그룹 (.)
+                        </div>
+                    </div>
+                    <p style="margin-top: 15px; font-size: 0.8rem; color: #888;">* 상세 예제 코드는 MS Office 파일 및 Repo 참조</p>
+                </div>
             </div>
 
-            <!-- 컨트롤 버튼 -->
             <button class="slide-btn prev-btn">❮</button>
             <button class="slide-btn next-btn">❯</button>
 
-            <!-- 인디케이터 도트 -->
             <div class="dots-container">
                 <span class="dot active" data-index="0"></span>
                 <span class="dot" data-index="1"></span>
                 <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
             </div>
         </div>
     </div>
@@ -70,3 +126,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
