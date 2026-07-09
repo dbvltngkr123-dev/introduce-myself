@@ -23,7 +23,8 @@
 
 - **[자기소개 페이지 바로가기](https://dbvltngkr123-dev.github.io/introduce-myself/)** 
   *(참고: 위 링크는 GitHub Pages로 배포된 주소입니다.)*
-  
+
+
   부득이하게 1차 과제 제출할때 ms office 파일을 제출했어야 했는데 실수로 누락했습니다 죄송합니다. 슬라이드 4에 명시 해놓았습니다
 ---
 
